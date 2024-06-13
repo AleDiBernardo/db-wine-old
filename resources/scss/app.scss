@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../scss/partials/header";
+@import "../scss/partials/footer";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMG RESET
+img{
+    max-width: 100%;
+}
+
+//you can delete this
+body{
+    background-color: rgb(109, 177, 255);
+}
+
+main{
+    padding-top: 80px;
+    height: 100vh;
+}

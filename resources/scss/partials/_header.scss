@@ -1,0 +1,52 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+
+header {
+    @include flex(row, space-between, center);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    background-color: lightcyan;
+    // debug
+    height: $header-heigth;
+    .container {
+        @include flex(row, space-between, center);
+        height: 100%;
+
+        .left-side {
+            @include flex(row, space-between, center);
+            gap: 30px;
+            height: 100%;
+
+            h1 {
+                margin: 0;
+            }
+
+            ul {
+                list-style-type: none;
+                @include flex(row, space-between, center);
+                padding: 0;
+                margin: 0;
+                height: 100%;
+
+                li {
+                    @include flex(row, center, center);
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                    height: 100%;
+                }
+                .active {
+                    // background-color: lightcoral;
+                    border-bottom: 2px solid blue;
+                }
+            }
+        }
+    }
+}

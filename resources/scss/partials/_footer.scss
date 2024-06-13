@@ -1,0 +1,11 @@
+@use "./mixins" as *;
+
+
+footer{
+    @include flex(row, center, center);
+
+    background-color: lightgreen;
+
+    // debug
+    height: 70px;
+}
