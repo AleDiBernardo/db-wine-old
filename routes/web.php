@@ -27,3 +27,4 @@ Route::get('/about', function () {
     ];
     return view('about', $data);
 })->name('about');
+
